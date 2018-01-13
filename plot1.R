@@ -13,3 +13,6 @@ sub.pow[1441:2880,"Time"] <- format(sub.pow[1441:2880,"Time"],"2007-02-02 %H:%M:
 hist(as.numeric(as.character(sub.pow$Global_active_power)),col="red",main="Global Active Power",xlab="Global Active Power(kilowatts)")
 #Adding Title
 title(main="Global Active Power")
+## Save file and close device
+#dev.copy(png,"plot1.png", width=480, height=480)
+#dev.off()
