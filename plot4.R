@@ -22,3 +22,6 @@ with(sub.pow,{
   legend("topright", lty=1, col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), cex = 0.6)
   plot(Time,as.numeric(as.character(Global_reactive_power)),type="l",xlab="datetime",ylab="Global_reactive_power")
 })
+## Save file and close device
+#dev.copy(png,"plot4.png", width=480, height=480)
+#dev.off()
