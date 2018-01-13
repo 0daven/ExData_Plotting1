@@ -10,7 +10,7 @@ sub.pow$Time <- strptime(sub.pow$Time, format="%H:%M:%S")
 sub.pow[1:1440,"Time"] <- format(sub.pow[1:1440,"Time"],"2007-02-01 %H:%M:%S")
 sub.pow[1441:2880,"Time"] <- format(sub.pow[1441:2880,"Time"],"2007-02-02 %H:%M:%S")
 #Setting plot area parameters
-par(mfrow=c(2,2))
+par(mfrow=c(2,2),mar=c(5,5,0,1),oma=c(0,0,0,0),cex=0.7)
 #Creating plots
 with(sub.pow,{
   plot(Time,as.numeric(as.character(Global_active_power)),type="l",xlab = "",ylab = "Global Active Power")
